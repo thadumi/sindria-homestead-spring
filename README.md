@@ -75,13 +75,19 @@ Database - homestead
 DB_User - homestead
 
 DB_Pass - secret
-
-		OR
+____________________________
 
 DB_User - root
 
 DB_Pass - secret
 
+###### Tomcat credentials: ######
+
+username - admin
+
+password - admin
+
+_________________________________________________________________________________________________
 
 
 ## New Instance
@@ -121,12 +127,17 @@ Database - homestead
 DB_User - homestead
 
 DB_Pass - secret
-
-		OR
+____________________________
 
 DB_User - root
 
 DB_Pass - secret
+
+###### Tomcat credentials: ######
+
+username - admin
+
+password - admin
 
 
 
