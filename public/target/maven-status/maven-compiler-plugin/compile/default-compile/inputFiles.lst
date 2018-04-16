@@ -1,0 +1,7 @@
+/opt/tomcat/webapps/local.usermanagement/public/src/main/java/dao/UserDaoImpl.java
+/opt/tomcat/webapps/local.usermanagement/public/src/main/java/dao/UserDao.java
+/opt/tomcat/webapps/local.usermanagement/public/src/main/java/service/UserServiceImpl.java
+/opt/tomcat/webapps/local.usermanagement/public/src/main/java/controller/UserController.java
+/opt/tomcat/webapps/local.usermanagement/public/src/main/java/model/User.java
+/opt/tomcat/webapps/local.usermanagement/public/src/main/java/service/UserService.java
+/opt/tomcat/webapps/local.usermanagement/public/src/main/java/controller/HomeController.java

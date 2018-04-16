@@ -1,0 +1,22 @@
+ip: 10.249.197.11
+memory: 1024
+cpus: 1
+provider: virtualbox
+authorize: ~/.ssh/homestead/vagrant@test.pub
+keys:
+    - ~/.ssh/homestead/vagrant@test
+folders:
+    -
+        map: /home/giuseppe/projects-personal/test
+        to: /opt/tomcat/webapps/source_test
+sites:
+    -
+        map: test
+        to: /opt/tomcat/webapps/source_test
+        type: "spring"
+databases:
+    - homestead
+name: test
+hostname: test
+mariadb: true
+sindria: true
