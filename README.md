@@ -25,7 +25,6 @@ Issue reporting is welcome. Pull requests are welcome.
 
 - Virtualbox 5.1 or higher ( dkms, kernel-devel-uname-r == $(uname -r) )
 - Vagrant 1.9 or higher
-- Composer
 - Git
 - OpenSSH client
 - Vim
