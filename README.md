@@ -35,6 +35,9 @@ Issue reporting is welcome. Pull requests are welcome.
 ##### Add vagrant box #####
 $ `vagrant box add laravel/homestead`
 
+$ `vagrant plugin install vagrant-vbguest`
+
+$ `vagrant plugin install vagrant-hostmanager`
 
 ##### Edit your hosts file #####
 $ `sudo vim /etc/hosts`
@@ -58,6 +61,8 @@ $ `git clone https://github.com/SindriaInc/sindria-homestead-spring.git`
 $ `mv sindria-homestead-spring <app-name>`
 
 $ `cd ~/<my-projects-folder>/<app-name>`
+
+$ `rm -rf .git/`
 
 ##### Edit Homestead.yaml #####
 $ `vim Homestead.yaml`
@@ -109,6 +114,8 @@ $ `git clone https://github.com/SindriaInc/sindria-homestead-spring.git`
 $ `mv sindria-homestead-spring <app-name>`
 
 $ `cd ~/<my-projects-folder>/<app-name>`
+
+$ `rm -rf .git/`
 
 ##### Edit Homestead.yaml #####
 $ `vim Homestead.yaml`
