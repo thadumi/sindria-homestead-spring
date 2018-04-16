@@ -75,7 +75,6 @@ Database - homestead
 DB_User - homestead
 
 DB_Pass - secret
-____________________________
 
 DB_User - root
 
@@ -127,7 +126,6 @@ Database - homestead
 DB_User - homestead
 
 DB_Pass - secret
-____________________________
 
 DB_User - root
 
