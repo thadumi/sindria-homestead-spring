@@ -1,22 +1,22 @@
-ip: 10.249.197.11
+ip: 10.249.197.10
 memory: 1024
 cpus: 1
 provider: virtualbox
-authorize: ~/.ssh/homestead/vagrant@test.pub
+authorize: ~/.ssh/homestead/vagrant@<app-name>.pub
 keys:
-    - ~/.ssh/homestead/vagrant@test
+    - ~/.ssh/homestead/vagrant@<app-name>
 folders:
     -
-        map: /home/giuseppe/projects-personal/test
-        to: /opt/tomcat/webapps/source_test
+        map: /home/<user>/<my-projects-folder>/<app-name>
+        to: /opt/tomcat/webapps/source_<app-name>
 sites:
     -
         map: test
-        to: /opt/tomcat/webapps/source_test
+        to: /opt/tomcat/webapps/source_<app-name>
         type: "spring"
 databases:
     - homestead
-name: test
-hostname: test
+name: <app-name>
+hostname: <app-name>
 mariadb: true
 sindria: true

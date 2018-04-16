@@ -39,25 +39,25 @@ $ `vagrant box add laravel/homestead`
 ##### Edit your hosts file #####
 $ `sudo vim /etc/hosts`
 
-`10.249.197.10   my-domain-name ## Homestead Host - add by Sindria Inc.`
+`10.249.197.10   <app-name> ## Homestead Host - add by Sindria Inc.`
 
 ##### Generate ssh-key #####
 $ `mkdir ~/.ssh/homestead/`
 
 $ `cd ~/.ssh/homestead/`
 
-$ `ssh-keygen`: enter the id_rsa name `vagrant@my-domain-name` with no passphrase. (enter twice)
+$ `ssh-keygen`: enter the id_rsa name `vagrant@<app-name>` with no passphrase. (enter twice)
 
 ##### Make project directory and clone this repo #####
-$ `mkdir ~/my-projects-folder/`
+$ `mkdir ~/<my-projects-folder>/`
 
-$ `cd ~/my-projects-folder/`
+$ `cd ~/<my-projects-folder>/`
 
 $ `git clone https://github.com/SindriaInc/sindria-homestead-spring.git`
 
-$ `mv sindria-homestead-spring my-domain-name`
+$ `mv sindria-homestead-spring <app-name>`
 
-$ `cd ~/my-projects-folder/my-domain-name`
+$ `cd ~/<my-projects-folder>/<app-name>`
 
 ##### Edit Homestead.yaml #####
 $ `vim Homestead.yaml`
@@ -89,21 +89,21 @@ DB_Pass - secret
 ##### Edit your hosts file #####
 $ `sudo vim /etc/hosts`
 
-`10.249.197.10   my-domain-name ## Homestead Host - add by Sindria Inc.`
+`10.249.197.10   <app-name> ## Homestead Host - add by Sindria Inc.`
 
 ##### Generate ssh-key #####
 $ `cd ~/.ssh/homestead/`
 
-$ `ssh-keygen`: enter the id_rsa name `vagrant@my-domain-name` with no passphrase. (enter twice)
+$ `ssh-keygen`: enter the id_rsa name `vagrant@<app-name>` with no passphrase. (enter twice)
 
 ##### Clone this repo #####
-$ `cd ~/my-projects-folder/`
+$ `cd ~/<my-projects-folder>/`
 
 $ `git clone https://github.com/SindriaInc/sindria-homestead-spring.git`
 
-$ `mv sindria-homestead-spring my-domain-name`
+$ `mv sindria-homestead-spring <app-name>`
 
-$ `cd ~/my-projects-folder/my-domain-name`
+$ `cd ~/<my-projects-folder>/<app-name>`
 
 ##### Edit Homestead.yaml #####
 $ `vim Homestead.yaml`
@@ -112,7 +112,7 @@ $ `vim Homestead.yaml`
 $ `vagrant up`
 
 
-##### Go to browser at http://my-domain-name:8080 or http://my-ip-address:8080 #####
+##### Go to browser at http://<app-name>:8080 or http://my-ip-address:8080 #####
 
 ###### Mysql credentials: ######
 
