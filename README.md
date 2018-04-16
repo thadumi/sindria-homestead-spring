@@ -20,7 +20,7 @@ GPL V3 (See LICENSE).
 
 Issue reporting is welcome. Pull requests are welcome.
 
-## Installation
+## Full Installation
 #### Make sure you have installed the following package: ####
 
 - Virtualbox 5.1 or higher ( dkms, kernel-devel-uname-r == $(uname -r) )
@@ -66,7 +66,51 @@ $ `vim Homestead.yaml`
 $ `vagrant up`
 
 
-##### Go to browser at http://my-domain-name:8080 or http://my-ip-addree:8080 #####
+##### Go to browser at http://my-domain-name:8080 or http://my-ip-address:8080 #####
+
+###### Mysql credentials: ######
+
+Database - homestead
+
+DB_User - homestead
+
+DB_Pass - secret
+
+		OR
+
+DB_User - root
+
+DB_Pass - secret
+
+## New Instance
+
+##### Edit your hosts file #####
+$ `sudo vim /etc/hosts`
+
+`10.249.197.10   my-domain-name ## Homestead Host - add by Sindria Inc.`
+
+##### Generate ssh-key #####
+$ `cd ~/.ssh/homestead/`
+
+$ `ssh-keygen`: enter the id_rsa name `vagrant@my-domain-name` with no passphrase. (enter twice)
+
+##### Clone this repo #####
+$ `cd ~/my-projects-folder/`
+
+$ `git clone https://github.com/SindriaInc/sindria-homestead-spring.git`
+
+$ `mv sindria-homestead-spring my-domain-name`
+
+$ `cd ~/my-projects-folder/my-domain-name`
+
+##### Edit Homestead.yaml #####
+$ `vim Homestead.yaml`
+
+##### Start vagrant box and provisioning for the first start #####
+$ `vagrant up`
+
+
+##### Go to browser at http://my-domain-name:8080 or http://my-ip-address:8080 #####
 
 ###### Mysql credentials: ######
 
