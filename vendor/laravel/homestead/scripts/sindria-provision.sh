@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-echo "Funziona anche questo..."
+echo "Custom provision INSERT HERE"
 sleep 10

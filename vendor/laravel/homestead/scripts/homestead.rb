@@ -356,37 +356,37 @@ class Homestead
         #end
 
         # Configure All Of The Configured Databases
-        #if settings.has_key?("databases")
-        #    settings["databases"].each do |db|
-        #        config.vm.provision "shell" do |s|
-        #            s.name = "Creating MySQL Database: " + db
-        #            s.path = scriptDir + "/create-mysql.sh"
-        #            s.args = [db]
-        #        end
+        if settings.has_key?("databases")
+            settings["databases"].each do |db|
+                config.vm.provision "shell" do |s|
+                    s.name = "Creating MySQL Database: " + db
+                    s.path = scriptDir + "/create-mysql.sh"
+                    s.args = [db]
+                end
 
-                #config.vm.provision "shell" do |s|
-                #    s.name = "Creating Postgres Database: " + db
-                #    s.path = scriptDir + "/create-postgres.sh"
-                #    s.args = [db]
-                #end
+                config.vm.provision "shell" do |s|
+                    s.name = "Creating Postgres Database: " + db
+                    s.path = scriptDir + "/create-postgres.sh"
+                    s.args = [db]
+                end
 
-                #if settings.has_key?("mongodb") && settings["mongodb"]
-                #    config.vm.provision "shell" do |s|
-                #        s.name = "Creating Mongo Database: " + db
-                #        s.path = scriptDir + "/create-mongo.sh"
-                #        s.args = [db]
-                #    end
-                #end
+                if settings.has_key?("mongodb") && settings["mongodb"]
+                    config.vm.provision "shell" do |s|
+                        s.name = "Creating Mongo Database: " + db
+                        s.path = scriptDir + "/create-mongo.sh"
+                        s.args = [db]
+                    end
+                end
 
-                #if settings.has_key?("couchdb") && settings["couchdb"]
-                #    config.vm.provision "shell" do |s|
-                #        s.name = "Creating Couch Database: " + db
-                #        s.path = scriptDir + "/create-couch.sh"
-                #        s.args = [db]
-                #    end
-                #end
-        #    end
-        #end
+                if settings.has_key?("couchdb") && settings["couchdb"]
+                    config.vm.provision "shell" do |s|
+                        s.name = "Creating Couch Database: " + db
+                        s.path = scriptDir + "/create-couch.sh"
+                        s.args = [db]
+                    end
+                end
+          end
+        end
 
         # Update Composer On Every Provision
         #config.vm.provision "shell" do |s|
