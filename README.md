@@ -66,7 +66,7 @@ $ `vim Homestead.yaml`
 $ `vagrant up`
 
 
-##### Go to browser at http://my-domain-name:8080 or http://my-ip-address:8080 #####
+##### Go to browser at http://app-name:8080 or http://my-ip-address:8080 #####
 
 ###### Mysql credentials: ######
 
@@ -112,7 +112,7 @@ $ `vim Homestead.yaml`
 $ `vagrant up`
 
 
-##### Go to browser at http://<app-name>:8080 or http://my-ip-address:8080 #####
+##### Go to browser at http://app-name:8080 or http://my-ip-address:8080 #####
 
 ###### Mysql credentials: ######
 
