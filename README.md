@@ -82,6 +82,8 @@ DB_User - root
 
 DB_Pass - secret
 
+
+
 ## New Instance
 
 ##### Edit your hosts file #####
