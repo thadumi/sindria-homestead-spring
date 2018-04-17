@@ -72,15 +72,6 @@ echo "$block2" > "/opt/tomcat/conf/tomcat-users.xml"
 echo "Restarting tomcat service..."
 sudo systemctl restart tomcat
 
-#echo "Grant access to tomcat..."
-#sed -i 's/allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" />/allow="10\.249\.197\.1|127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" />/g' /opt/tomcat/webapps/host-manager/META-INF/context.xml
-#sed -i 's/allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" />/allow="10\.249\.197\.1|127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" />/g' /opt/tomcat/webapps/manager/META-INF/context.xml
-
-#sudo sed -i '20s/.*/allow="10\.249\.197\.1|127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" />/' /opt/tomcat/webapps/host-manager/META-INF/context.xml
-#sudo sed -i '20s/.*/allow="10\.249\.197\.1|127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" />/' /opt/tomcat/webapps/manager/META-INF/context.xml
-#echo "Restarting tomcat service Again..."
-#sudo systemctl restart tomcat
-
 cd /tmp
 wget http://ftp.wayne.edu/apache/maven/maven-3/3.5.2/binaries/apache-maven-3.5.2-bin.zip
 unzip apache-maven-3.5.2-bin.zip
