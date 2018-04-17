@@ -142,7 +142,7 @@ $ `cd /opt/tomcat/webapps/source_<app-name>`
 
 $ `chmod +x fixer-tomcat-permission.sh`
 
-$ `./fixer-tomcat-permission.sh` and insert your <app-name> when asked.
+$ `./fixer-tomcat-permission.sh` and insert your app-name when asked.
 	
 
 ##### Go to browser at http://app-name:8080 or http://my-ip-address:8080 #####
