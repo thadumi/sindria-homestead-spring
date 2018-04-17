@@ -4,7 +4,7 @@ Laravel/Homestead custom configuration for Java Spring - Develop by Sindria Inc.
 
 This configuration:
 
-- oracle-jdk-8
+- oracle-jdk-9
 - apache-tomcat-8.5.30
 - maven 3.5.2
 
