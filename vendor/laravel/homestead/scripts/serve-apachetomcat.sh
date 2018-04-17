@@ -60,22 +60,11 @@ sudo systemctl start tomcat
 sudo systemctl status tomcat
 sudo ufw allow 8080
 sudo systemctl enable tomcat
-sudo mkdir /opt/tomcat/conf
-sudo touch /opt/tomcat/conf/tomcat-users.xml
 
 block2="
 <tomcat-users>
-<!--
-  <role rolename="tomcat"/>
-  <role rolename="role1"/>
-  <user username="tomcat" password="tomcat" roles="tomcat"/>
-  <user username="both" password="tomcat" roles="tomcat,role1"/>
-  <user username="role1" password="tomcat" roles="role1"/>
--->
-
         <role rolename="manager-gui"/>
         <user username="admin" password="admin" roles="manager-gui"/>
-
 </tomcat-users>
 "
 
