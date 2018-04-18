@@ -18,7 +18,6 @@ source /etc/environment
 echo $JAVA_HOME
 echo $PATH
 java -version
-
 #echo "oracle-java8-installer shared/accepted-oracle-license-v1-1 select true" | sudo debconf-set-selections
 #sudo apt-get install oracle-java8-installer -y
 #sudo apt install oracle-java9-installer -y
@@ -91,7 +90,7 @@ mv apache-maven-3.5.2 maven
 sudo cp -R maven/ /opt/
 
 block3="
-export JAVA_HOME=/opt/java/jdk1.8.0_172/bin/java
+export JAVA_HOME=/opt/java/jdk1.8.0_172/
 export M2_HOME=/opt/maven
 export MAVEN_HOME=/opt/maven
 export PATH=/opt/maven/bin:${PATH}
