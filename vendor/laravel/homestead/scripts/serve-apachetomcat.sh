@@ -100,5 +100,13 @@ echo "$block3" > "/etc/profile.d/maven.sh"
 source /etc/profile.d/maven.sh
 echo "Maven installed successfully"
 mvn -version
+
+##########################################
+# custom by thadumi
+##########################################
+
+sudo apt install node
+
+##########################################
 sleep 10
 echo "Done."
