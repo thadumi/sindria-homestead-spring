@@ -105,7 +105,13 @@ mvn -version
 # custom by thadumi
 ##########################################
 
-sudo apt install node
+curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+sudo apt install nodejs
+echo "nodejs installed successfully"
+
+sudo apt install npm
+npm install -g npm@latest
+echo "npm installed successfully"
 
 ##########################################
 sleep 10
