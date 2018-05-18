@@ -7,7 +7,8 @@ This configuration:
 - oracle-jdk-8
 - apache-tomcat-8.5.30
 - maven 3.5.2
-
+-node.js
+-npm
 
 ## Compatibility
 
